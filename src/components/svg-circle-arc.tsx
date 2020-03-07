@@ -20,6 +20,7 @@ export const SvgCircleArc = React.forwardRef<SVGPathElement | SVGCircleElement, 
         angle = Math.min(360, Math.abs(angle)) // transform >360 angles to 360
             * Math.pow(angle, 0); // support <0 angles
         const rad = angle * Math.PI / 180;
+
         const d = [
             "M", radius, 0,
             "A", radius, radius, 0, Number(angle >= 180), 1,

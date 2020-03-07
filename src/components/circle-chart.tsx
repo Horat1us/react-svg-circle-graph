@@ -5,6 +5,8 @@ export interface CircleChartProps {
     angle: number;
     radius: number;
     border: number;
+    color1: string;
+    color2: string;
 }
 
 export type CircleChartSVGProps =
@@ -12,7 +14,7 @@ export type CircleChartSVGProps =
 
 export const CircleChart = React.forwardRef<SVGSVGElement, CircleChartSVGProps>(
     (
-        { angle, border, radius, ...childProps },
+        { color1, color2, angle, border, radius, ...childProps },
         ref,
     ) => {
         return (
@@ -20,14 +22,14 @@ export const CircleChart = React.forwardRef<SVGSVGElement, CircleChartSVGProps>(
                 <defs>
                     <linearGradient id="grad1">
                         <stop offset="0" stopColor="yellow"/>
-                        <stop offset="25%" stopColor="blue"/>
+                        <stop offset="25%" stopColor={color2}/>
                     </linearGradient>
                 </defs>
                 <SvgCircleArc
                     r={radius}
                     fill="none"
                     strokeWidth={border}
-                    stroke="blue"
+                    stroke={color2}
                     angle={angle * 1.2}
                     transform="rotate(90)"
                 />
@@ -36,7 +38,7 @@ export const CircleChart = React.forwardRef<SVGSVGElement, CircleChartSVGProps>(
                     angle={360 - angle * 0.8}
                     fill="none"
                     strokeWidth={border}
-                    stroke="yellow"
+                    stroke={color1}
                     transform="rotate(-135) scale(.75)"
                 />
                 <g transform={`translate(${radius * 2 + border * 4}, 0)`}>
@@ -53,7 +55,7 @@ export const CircleChart = React.forwardRef<SVGSVGElement, CircleChartSVGProps>(
                         angle={angle - 180}
                         fill="none"
                         strokeWidth={border}
-                        stroke="yellow"
+                        stroke={color1}
                         transform={`rotate(90)`}
                     />}
                 </g>

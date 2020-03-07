@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "https://horat1us.github.io/react-svg-circle-graph/static/js/main.b98c7bd9.chunk.js",
+    "main.js.map": "https://horat1us.github.io/react-svg-circle-graph/static/js/main.b98c7bd9.chunk.js.map",
+    "runtime-main.js": "https://horat1us.github.io/react-svg-circle-graph/static/js/runtime-main.3577a467.js",
+    "runtime-main.js.map": "https://horat1us.github.io/react-svg-circle-graph/static/js/runtime-main.3577a467.js.map",
+    "static/js/2.cbf12c96.chunk.js": "https://horat1us.github.io/react-svg-circle-graph/static/js/2.cbf12c96.chunk.js",
+    "static/js/2.cbf12c96.chunk.js.map": "https://horat1us.github.io/react-svg-circle-graph/static/js/2.cbf12c96.chunk.js.map",
+    "index.html": "https://horat1us.github.io/react-svg-circle-graph/index.html",
+    "precache-manifest.903ca3ef7d1a2b450be3f8d200899aa8.js": "https://horat1us.github.io/react-svg-circle-graph/precache-manifest.903ca3ef7d1a2b450be3f8d200899aa8.js",
+    "service-worker.js": "https://horat1us.github.io/react-svg-circle-graph/service-worker.js",
+    "static/js/2.cbf12c96.chunk.js.LICENSE.txt": "https://horat1us.github.io/react-svg-circle-graph/static/js/2.cbf12c96.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3577a467.js",
+    "static/js/2.cbf12c96.chunk.js",
+    "static/js/main.b98c7bd9.chunk.js"
+  ]
+}
